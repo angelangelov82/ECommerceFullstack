@@ -1,0 +1,35 @@
+<!-- ========================= FOOTER ========================= -->
+<br><br><br><br>
+<footer class="section-footer fixed-bottom bg-light border-top !important" >
+	<div class="container">
+		<section class="footer-bottom border-top row">
+			<div class="col-md-3">
+				<p class="text-muted"> &copy 2021 Angel Angelov </p>
+			</div>
+			<div class="col-md-6 text-md-center">
+				<span  class="px-2">10314086@mydbs.ie</span>
+				<span  class="px-2">Final Project</span>
+				<span  class="px-2"><a href="{% url 'privacy_policy' %}">Privacy Policy</a></span>
+			</div>
+			<div class="col-md-3 text-md-right text-muted">
+				<a id="social_media" href="https://www.facebook.com" target="_blank" class="fa fa-facebook" style="color: blue;"></a><!-- Social media links-->
+				<a id="social_media" href="https://twitter.com" target="_blank" class="fa fa-twitter" style="color: #f0cb92;"></a><!-- Social media links-->
+				<a id="social_media" href="https://www.youtube.com" target="_blank" class="fa fa-youtube" style="color: red;"></a><!-- Social media links-->
+			</div>
+		</section>
+	</div><!-- //container -->
+</footer>
+
+<!-- ========================= FOOTER END // ========================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();
+			$('.mainImage img').attr('src', $(this).attr("href"));
+		})
+	})
+</script>
+
+</body>
+</html>

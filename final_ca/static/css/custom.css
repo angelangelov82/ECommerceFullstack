@@ -1,0 +1,132 @@
+/*Hide radio button*/
+
+.rate > input{
+  display: none;
+}
+
+.rate{
+  display:inline-block;
+  border: 0;
+}
+
+.rate > label{
+  float: right;
+}
+
+/*show the stars*/
+
+.rate > label:before{
+  display: inline-block;
+  font-size: 1.1rem;
+  font-family: FontAwesome;
+  content: "\f005";
+  margin: 0;
+  padding: 0.3rem .2rem;
+  cursor: pointer;
+}
+
+/* Half star */
+.rate .half:before{
+  content: "\f089";
+  position: absolute;
+  padding-right: 0;
+}
+
+/* click and hover*/
+input:checked ~ label, label:hover ~ label{
+  color: #ffb503; /*#03fc07*/
+}
+
+/*hover highlight*/
+
+input:checked + label:hover, input:checked ~ label:hover, input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label{
+  color: #d9b114;
+}
+
+.rating-star i{
+  color: #ffb503 !important;
+}
+
+ul.thumb{
+  margin: 0 auto;
+  padding: 0;
+  float: left;
+}
+
+ul.thumb li{
+  list-style: none;
+  margin: 10px;
+}
+
+ul.thumb li img{
+  width: 80px;
+  border: 1px solid grey;
+}
+
+body{
+  background-color: #fafafa !important;
+}
+
+a#social_media{
+  width: 45px !important;
+	margin-right: 2%!important;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+
+.fa-facebook {
+  padding-top: 14px;
+	width: 45px;
+	height:45px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  background: white;
+  color: blue;
+  border: 3px solid;
+  border-color: blue !important;
+}
+
+.fa-twitter{
+  padding-top: 14px;
+  width: 45px;
+  height:45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid;
+  border-color: #eb9e23 !important;
+  color: #eb9e23;
+
+}
+
+.fa-youtube{
+  padding-top: 14px;
+  width: 45px;
+  height:45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid;
+  border-color: red !important;
+  color: red;
+
+}
+
+#divcon{
+  background-color: white;
+  border: 3px solid !important;
+  border-color: grey !important;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+#divcon h3,h4,p{
+  padding: 10px 10px 10px 20px;
+}
