@@ -24,7 +24,7 @@
 		<header class="card-header">
 			<a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
 				<i class="icon-control fa fa-chevron-down"></i>
-				<h6 class="title">Categories</h6>
+				<h5 class="title" >Categories</h5>
 			</a>
 		</header>
 		<div class="filter-content collapse show" id="collapse_1" style="">
@@ -57,10 +57,10 @@
 <div class="row">
   {% for product in products%}
 	<div class="col-md-4">
-		<figure class="card card-product-grid">
-			<div class="img-wrap">
+		<figure class="card card-product-grid  ">
+			<div class="img-wrap mt-3" >
 
-				<a href="{{ product.get_url }}"><img src="{{ product.Images.url }}"></a>
+				<a href="{{ product.get_url }}"><img src="{{ product.Images.url }}" class=""></a>
 
 			</div> <!-- img-wrap.// -->
 			<figcaption class="info-wrap">

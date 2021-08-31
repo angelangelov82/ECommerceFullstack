@@ -10,3 +10,4 @@ pyparsing
 django-honeypot
 pytz
 Pillow
+mock
