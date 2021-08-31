@@ -22,11 +22,11 @@
 		<div class="card-body">
 			<div class="row">
 
-				<div class="col-md-6">
-          <div class="card" style="text-align: center;">
+				<div class="col-md-6 ">
+          <div class="card " style="text-align: center;">
             <div class="card-body">
-              <h5 class="card-title">Total Orders</h5>
-              <h4>{{orders_count}}</h4>
+              <h5 class="card-title mt-2">Total Orders</h5>
+              <h4 class="mt-4">{{orders_count}}</h4>
               <a href="{% url 'my_orders' %}">View Orders</a>
             </div>
           </div>
@@ -37,7 +37,7 @@
             <div class="card-body">
               <img src="{{userprofile.profile_picture.url}}" alt="User profile picture" width="34"  style="border-radius:50%;">
               <p class="mb-0">Email: {{user.email}}</p>
-              <p>Phone: {{user.phone_number}}</p>
+              <p class="mb-0">Phone: {{user.phone_number}}</p>
             </div>
           </div>
         </div>
