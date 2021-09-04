@@ -4,19 +4,19 @@
 
 {% block content %}
 
-<section class="section-content mt-5 padding-y bg">
-<div class="container">
+<section class="section-content mt-5 mb-5 padding-y bg">
+<div class="container" style="margin-bottom:34px !important;">
 
 
 <!-- ============================ COMPONENT 1 ================================= -->
 
-<div class="row">
+<div class="row" class="">
 	<aside class="col-lg-6">
     <div class="card">
       <div class="card-body">
         <h4 class="card-title mb-4" style="color:blue;">Billing Address</h4>
 
-        <form class="" action="{% url 'place_order' %}" method="POST">
+        <form class="" action="{% url 'place_order' %}" method="POST" >
           {% csrf_token %}
           <div class="form-row">
             <div class="col form-group">

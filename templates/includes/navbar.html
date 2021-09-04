@@ -1,7 +1,7 @@
 {% load static %}
 
 {% block content %}
-<header class="section-header fixed-top bg-light">
+<header class="section-header top bg-light">
 <nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom">
 <div class="container">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +30,7 @@
 <div class="row align-items-center custom-navbar">
 	<div class="col-lg-2 col-md-3 col-6">
 		<a href="{% url 'home'%}" class="brand-wrap">
+
 			<img class="logo" src="{% static './images/logo.png' %}">
 		</a> <!-- brand-wrap.// -->
 	</div>
@@ -47,7 +48,7 @@
 			<a href="{% url 'store' %}" class="btn mb-2 btn-outline-primary">Store</a>
 		</div>  <!-- category-wrap.// -->
 	</div> <!-- col.// -->
-	
+
 <!--search bar field-->
 	<div class="col-lg  mb-1 col-md-6 col-sm-12 col">
 		<form action="{% url 'search' %}" class="search" method="GET">
@@ -95,5 +96,5 @@
 
 
 </header> <!-- section-header.// -->
-<br><br><br><br>
+
 {% endblock %}
