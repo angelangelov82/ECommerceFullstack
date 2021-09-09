@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'admin_honeypot',# fake admin function that detects hackers activity, ip details
-
+    'privacy'
 ]
 
 MIDDLEWARE = [
